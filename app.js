@@ -13,4 +13,26 @@ fetch(url)
 
 }
 
-document.getElementById("btn").addEventListener("click", testGS);
+
+
+function addGS() {
+
+    const url = "https://script.google.com/macros/s/AKfycbzz6tCnBGakoqexU1N0COXgRA3-s83BydQs6X5qw8S4mywBx6w/exec";
+    fetch(url, {
+        method: 'POST',
+        mode: 'no-cors',
+        cache: 'no-cache',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        redirect: 'follow',
+        body: JSON.stringify({name: "Olivia"})
+    });
+ 
+    }
+
+
+    document.getElementById("btn").addEventListener("click", testGS);
+
+    
+    document.getElementById("btn2").addEventListener("click", addGS);
