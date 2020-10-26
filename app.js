@@ -16,8 +16,8 @@ fetch(url)
 
 function addGS() {
 
-    var url = "https://script.google.com/macros/s/AKfycby62jOdGnnfx-GhqPEPFDsEGPhg165LOoAsiX8ObHzPd07Jwrho/exec";
-          //"https://script.google.com/macros/s/AKfycbzz6tCnBGakoqexU1N0COXgRA3-s83BydQs6X5qw8S4mywBx6w/exec";
+    const url = "https://script.google.com/macros/s/AKfycby62jOdGnnfx-GhqPEPFDsEGPhg165LOoAsiX8ObHzPd07Jwrho/exec";
+
     fetch(url, {
         method: 'POST',
         mode: 'no-cors',
